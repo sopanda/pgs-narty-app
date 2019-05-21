@@ -1,0 +1,72 @@
+.NavigationWrapper {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.Logo {
+  background-image: url("../../assets/pgs-logo.png");
+  height: 57px;
+  width: 105px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -14px;
+}
+
+.Navbar {
+  flex-direction: column;
+  align-items: stretch;
+  padding-bottom: 0;
+}
+
+.NavbarBrand {
+  margin: 22px 0;
+  width: fit-content;
+}
+
+.NavItem {
+  margin-right: 55px;
+  position: relative;
+  width: fit-content;
+}
+
+.NavLink {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+  padding-bottom: 15px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.NavLink::after {
+  background-color: #ff7626;
+  content: "";
+  width: 0;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  transition: width 0.35s ease 0s;
+  position: absolute;
+}
+
+.NavLink:hover::after {
+  width: 100%;
+}
+
+.Active::after {
+  width: 100%;
+  background-color: #ff7626;
+  content: "";
+  height: 1px;
+}
+
+.Toggler {
+  border: none;
+}
+
+@media only screen and (device-width: 767px),
+  only screen and (max-width: 767px) {
+  .Navbar {
+    flex-direction: row;
+    align-items: center;
+  }
+}

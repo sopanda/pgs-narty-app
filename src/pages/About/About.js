@@ -1,8 +1,9 @@
 import React from "react";
 import AboutList from "../../components/AboutList";
-import data from "../../mock/data.json";
+import { useSelector } from "react-redux";
 
 const About = () => {
+  const data = useSelector(state => state.aboutData);
   return <AboutList data={data} />;
 };
 

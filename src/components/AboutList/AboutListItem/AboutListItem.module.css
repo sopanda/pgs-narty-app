@@ -1,5 +1,8 @@
 .Card {
   margin-bottom: 38px;
+  -moz-box-shadow: 1px 1px 1px 1px #efefef;
+  -webkit-box-shadow: 1px 1px 1px 1px #efefef;
+  box-shadow: 1px 1px 1px 1px #efefef;
 }
 
 .CardTitle,

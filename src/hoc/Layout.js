@@ -6,9 +6,7 @@ import classes from "./Layout.module.css";
 export const Layout = props => (
   <div className={classes.Wrapper}>
     <Navigation />
-    <main className={classes.Main}>
-      <div>{props.children}</div>
-    </main>
+    <main className={classes.Main}>{props.children}</main>
     <Footer />
   </div>
 );

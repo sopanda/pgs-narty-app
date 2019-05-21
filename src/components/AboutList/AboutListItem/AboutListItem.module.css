@@ -1,0 +1,12 @@
+.Card {
+  margin-bottom: 38px;
+}
+
+.CardTitle,
+.CardText {
+  color: #646464;
+}
+
+.CardTitle {
+  font-weight: 400;
+}

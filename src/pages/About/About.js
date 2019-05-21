@@ -1,7 +1,9 @@
 import React from "react";
+import AboutList from "../../components/AboutList";
+import data from "../../mock/data.json";
 
 const About = () => {
-  return <div>Hello from about</div>;
+  return <AboutList data={data} />;
 };
 
 export default About;

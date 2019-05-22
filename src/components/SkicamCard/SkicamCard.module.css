@@ -12,18 +12,26 @@
 }
 
 .Title {
-  margin: auto;
   color: #646464;
+  padding: 10px;
   font-weight: 400;
+  margin: auto;
 }
 
 .Date {
   position: absolute;
-  position: absolute;
-  font-size: 12px;
+  font-size: 10px;
   color: #a09898;
-  right: 4px;
-  top: 4px;
+  right: 12px;
+  top: 12px;
+}
+
+.CardBody {
+  padding: 0;
+}
+
+.CardBody img {
+  border-radius: 0;
 }
 
 @media only screen and (device-width: 767px),

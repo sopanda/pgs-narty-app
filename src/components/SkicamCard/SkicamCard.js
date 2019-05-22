@@ -21,16 +21,18 @@ const SkicamCard = ({ data }) => {
             .join("-")}
         </span>
       </CardHeader>
-      <CardBody>
-        {cameras.map((camera, i) => (
-          <CardImg
-            key={i + camera.name}
-            top
-            width="100%"
-            src={camera.url}
-            alt={`${camera.name} image`}
-          />
-        ))}
+      <CardBody className={classes.CardBody}>
+        {cameras.map((camera, i) =>
+          i <= 1 ? (
+            <CardImg
+              key={i + camera.name}
+              top
+              width="100%"
+              src={camera.url}
+              alt={`${camera.name} image`}
+            />
+          ) : null
+        )}
       </CardBody>
     </Card>
   );

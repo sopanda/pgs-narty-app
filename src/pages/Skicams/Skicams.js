@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 import SkicamCard from "../../components/SkicamCard";
+import Loader from "../../components/Loader";
 
 const Skicams = () => {
   const [loadedData, setData] = useState([]);
@@ -51,7 +52,9 @@ const Skicams = () => {
         ))}
       </Row>
     </Container>
-  ) : null;
+  ) : (
+    <Loader />
+  );
 };
 
 export default Skicams;

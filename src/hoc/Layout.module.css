@@ -7,4 +7,6 @@
 .Main {
   flex: 1;
   background-color: #f8f8f8;
+  padding: 38px 0;
+  display: flex;
 }

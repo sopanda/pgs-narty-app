@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import AboutListItem from "./AboutListItem";
-import classes from "./AboutList.module.css";
 
 const AboutList = props => {
   let aboutCards = props.data.map(item => {
@@ -12,11 +11,9 @@ const AboutList = props => {
     );
   });
   return (
-    <div className={classes.AboutListWrapper}>
-      <Container>
-        <Row>{aboutCards}</Row>
-      </Container>
-    </div>
+    <Container>
+      <Row>{aboutCards}</Row>
+    </Container>
   );
 };
 

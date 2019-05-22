@@ -1,0 +1,87 @@
+.FormWrapper {
+  max-width: 447px;
+  margin: auto;
+  width: 90%;
+  padding: 68px 0;
+  background-color: #fff;
+  -moz-box-shadow: 1px 1px 1px 1px #efefef;
+  -webkit-box-shadow: 1px 1px 1px 1px #efefef;
+  box-shadow: 1px 1px 1px 1px #efefef;
+}
+
+.Form {
+  max-width: 238px;
+  margin: auto;
+}
+
+.InputWrapper {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.MessageField,
+.NameField,
+.EmailField {
+  border: none;
+  font-size: 13px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.MessageField {
+  resize: none;
+  height: 80px !important;
+}
+
+.MessageField::-webkit-input-placeholder {
+  font-size: 13px;
+  color: #495057;
+  padding-top: 47px;
+  transition-timing-function: ease-out;
+  transition: 0.25s;
+}
+
+.MessageField:focus::-webkit-input-placeholder {
+  padding-top: 0;
+}
+
+.NameField + label,
+.EmailField + label {
+  color: #495057;
+  left: 13px;
+  position: absolute;
+  top: 7px;
+  font-size: 13px;
+}
+
+.NameField + label:after,
+.EmailField + label:after {
+  content: " *";
+  color: red;
+}
+
+.NameField:invalid + label,
+.EmailField:invalid + label {
+  display: inline-block;
+}
+
+.NameField:valid + label {
+  display: none;
+}
+
+.EmailField:not([value=""]) + label {
+  display: none;
+}
+
+.SubmitBtn {
+  width: 90px;
+  height: 36px;
+  background: #2695ee;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+}
+
+.SubmitBtn:hover,
+.SubmitBtn:focus {
+  background: #2774b3;
+}

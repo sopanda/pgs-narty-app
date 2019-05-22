@@ -1,10 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif !important;
   margin: 0;
   padding: 0;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }

@@ -46,7 +46,7 @@ const Skicams = () => {
     <Container>
       <Row>
         {loadedData.map((camera, i) => (
-          <Col key={i + camera.name} lg="6">
+          <Col key={i + camera.name} md="6">
             <SkicamCard data={camera} />
           </Col>
         ))}

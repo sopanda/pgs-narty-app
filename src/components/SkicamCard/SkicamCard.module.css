@@ -1,9 +1,7 @@
 .Card {
-  margin-bottom: 38px;
   -moz-box-shadow: 1px 1px 1px 1px #efefef;
   -webkit-box-shadow: 1px 1px 1px 1px #efefef;
   box-shadow: 1px 1px 1px 1px #efefef;
-  margin-bottom: 38px;
 }
 
 .Header {
@@ -26,4 +24,11 @@
   color: #a09898;
   right: 4px;
   top: 4px;
+}
+
+@media only screen and (device-width: 767px),
+  only screen and (max-width: 767px) {
+  .Card {
+    margin-bottom: 38px;
+  }
 }

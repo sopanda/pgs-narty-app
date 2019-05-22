@@ -1,5 +1,4 @@
 .Card {
-  margin-bottom: 38px;
   -moz-box-shadow: 1px 1px 1px 1px #efefef;
   -webkit-box-shadow: 1px 1px 1px 1px #efefef;
   box-shadow: 1px 1px 1px 1px #efefef;
@@ -12,4 +11,11 @@
 
 .CardTitle {
   font-weight: 400;
+}
+
+@media only screen and (device-width: 767px),
+  only screen and (max-width: 767px) {
+  .Card {
+    margin-bottom: 38px;
+  }
 }

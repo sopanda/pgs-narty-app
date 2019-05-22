@@ -1,19 +1,23 @@
-import React, { Fragment } from "react";
+import React, { Fragment, Suspense, lazy } from "react";
 import { Layout } from "./hoc/index";
 import { Route, Switch } from "react-router-dom";
 import About from "./pages/About";
-import Skicams from "./pages/Skicams";
-import Contact from "./pages/Contact";
+import Loader from "./components/Loader";
+
+const Skicams = lazy(() => import("./pages/Skicams"));
+const Contact = lazy(() => import("./pages/Contact"));
 
 const App = () => {
   return (
     <Fragment>
       <Layout>
-        <Switch>
-          <Route exact path="/" component={About} />
-          <Route exact path="/skicams" component={Skicams} />
-          <Route exact path="/contact" component={Contact} />
-        </Switch>
+        <Suspense fallback={<Loader />}>
+          <Switch>
+            <Route exact path="/" component={About} />
+            <Route exact path="/skicams" component={Skicams} />
+            <Route exact path="/contact" component={Contact} />
+          </Switch>
+        </Suspense>
       </Layout>
     </Fragment>
   );

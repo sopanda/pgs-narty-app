@@ -32,7 +32,7 @@ const Navigation = () => {
                   to="/"
                   activeClassName={classes.Active}
                   className={classes.NavLink}
-                  onClick={isOpen && toggle}
+                  onClick={isOpen ? toggle : null}
                 >
                   About
                 </NavLink>
@@ -44,7 +44,7 @@ const Navigation = () => {
                   to="/skicams"
                   activeClassName={classes.Active}
                   className={classes.NavLink}
-                  onClick={isOpen && toggle}
+                  onClick={isOpen ? toggle : null}
                 >
                   Skicams
                 </NavLink>
@@ -56,7 +56,7 @@ const Navigation = () => {
                   exact
                   to="/contact"
                   activeClassName={classes.Active}
-                  onClick={isOpen && toggle}
+                  onClick={isOpen ? toggle : null}
                 >
                   Contact
                 </NavLink>

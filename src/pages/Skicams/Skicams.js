@@ -8,6 +8,8 @@ const Skicams = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const fetchData = () => {
+    const proxyUrl = "https://cors-anywhere.herokuapp.com/";
+    const url = "https://makevoid-skicams.p.mashape.com/cams.json";
     const options = {
       method: "GET",
       headers: {
@@ -15,7 +17,7 @@ const Skicams = () => {
       }
     };
     setIsLoading(true);
-    fetch("https://makevoid-skicams.p.mashape.com/cams.json", options)
+    fetch(proxyUrl + url, options)
       .then(response => {
         if (!response.ok) {
           throw new Error("Could not fetch cameras!");

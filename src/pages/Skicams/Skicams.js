@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 import SkicamCard from "../../components/SkicamCard";
 import Loader from "../../components/Loader";
+import classes from "./Skicams.module.css";
 
 const Skicams = () => {
   const [loadedData, setData] = useState([]);
@@ -48,7 +49,7 @@ const Skicams = () => {
     <Container>
       <Row>
         {loadedData.map((camera, i) => (
-          <Col key={i + camera.name} md="6">
+          <Col key={i + camera.name} md="6" className={classes.Column}>
             <SkicamCard data={camera} />
           </Col>
         ))}

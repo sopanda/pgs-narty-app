@@ -1,0 +1,6 @@
+@media only screen and (device-width: 767px),
+  only screen and (max-width: 767px) {
+  .Column:not(:last-child) {
+    margin-bottom: 38px;
+  }
+}
